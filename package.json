@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "live-server src --port=5777",
+    "server": "live-server --port=5777",
     "url": "json-server --watch ./db/students.json  port 3000",
     "start": "concurrently \"npm run server\" \"npm run url\" \" npm run scss -- -w\" \" npm run tailwindcss\""
   },
