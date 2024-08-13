@@ -1,0 +1,164 @@
+main{
+    .container{
+        .content{
+            width: 100%;
+            height: calc(100vh - 180px);
+            border: 1px solid transparent;
+            overflow-y: scroll;
+            border-radius: 30px;
+            padding: 30px 20px;
+            box-shadow: 0px 5px 31px 5px rgba(170, 170, 170, 0.3);
+            table{
+                width: 100%;
+                padding: 20px 0;
+                thead{
+                    width: 100%;
+                    background-color: aqua;
+                    height: 60px;
+                    border: 1px solid black;
+                    
+                    tr{
+                        th{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            max-width: 100px;
+                            padding: 10px 0;
+                            font-size: 16px;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+                tbody{
+                    width: 100%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    max-width: 100px;
+                    tr{
+                        z-index: 1;
+                        background-color: rgb(255, 160, 160);
+                        width: auto;
+                        td{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            max-width: 100px;
+                            border-radius: 4px;
+                            &:first-child{
+                                width: 4%;
+                            }
+                            &:last-child{
+                                width: 12%;
+                                position: relative;
+                                .action{
+                                    transition: all ease-in-out .3s;
+                                    .dot{
+                                        i{
+                                        width: 40px;
+                                        height: 40px;
+                                        font-size: 30px;
+                                        font-weight: 900;
+                                        cursor: pointer;
+                                        border: 1px solid transparent;
+                                        transition: all ease-in-out .4s;
+                                        border-radius: 15px;
+
+                                        &:hover{
+                                            color: rgb(1, 62, 183);
+                                        }
+                                        }
+                                        
+                                    }
+                                    .act{
+                                        display: none;
+                                        padding: 5px;
+                                        align-items: center;
+                                        justify-content:center;
+                                        gap: 5px;
+                                        transition: all ease-in-out .4s;
+                                        animation-name: dot;
+                                        animation-duration: 0.6s;
+                                        i{
+                                            cursor: pointer;
+                                        }
+                                        .edt{
+                                            font-size: 30px;
+                                            &:hover{
+                                                color: rgba(85, 141, 0, 0.897);
+                                                transition: all ease-in-out .5s;
+                                                &:active{
+                                                    transform: scale(.9);
+                                                }
+                                            }
+                                        }
+                                        .trash{
+                                            font-size: 30px;
+                                            &:hover{
+                                                color: rgb(255, 73, 73);
+                                                transition: all ease-in-out .5s;
+                                                &:active{
+                                                    transform: scale(.9);
+                                                }
+                                            }
+                                        }
+                                        .about{
+                                            font-size: 30px;
+                                            &:hover{
+                                                color: rgb(73, 109, 255);
+                                                transition: all ease-in-out .5s;
+                                                &:active{
+                                                    transform: scale(.9);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    @keyframes dot {
+                                        0%{
+                                            transform: translateY(-20px);
+                                        }100%{
+                                            transform: translateY(0);
+                                        }
+                                    }
+                                }
+                            }
+                            width: 28%;
+                            font-size: 18px;
+                            text-align: center;
+                            .fullname{
+                                display: flex;
+                                padding: 0 0 0 10px;
+                                justify-content:start;
+                                align-items: center;
+                                text-align: start;
+                                gap: 10px;
+                                .img{
+                                    border-radius: 25px;
+                                    width: 50px;
+                                    height: 50px;
+                                    img{
+                                        border: 2px solid black;
+                                        width: 100%;
+                                        width: 50px;
+                                        height: 50px;
+                                        border-radius: 25px;
+                                        object-fit:cover;
+                                    }
+                                }
+                                .title{
+                                    h1{
+                                        font-size:20px;
+                                    }
+                                    h2{
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

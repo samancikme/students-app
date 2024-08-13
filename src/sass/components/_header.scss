@@ -1,0 +1,83 @@
+header{
+    .container{
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            .logo{
+                font-size: 30px;
+                font-weight: 500;
+                color: black;
+                cursor: pointer;
+                span{
+                    color: rgba(63, 63, 200, 0.889);
+                    font-weight: 700;
+                }
+            }
+            form{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                input{
+                    color: black;
+                    font-weight: 500;
+                    width: 100%;
+                    padding: 12px 20px;
+                    outline: none;
+                    border-radius: 20px;
+                    border: 1px solid transparent;
+                    font-size: 14px;
+                    background: rgba(255, 255, 255, 0.475);
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(6.9px);
+                    -webkit-backdrop-filter: blur(6.9px);
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    box-shadow: 1px 1px 24px -5px rgba(0, 0, 0, 0.44);
+                }
+                .btn{
+                    font-size: 30px;
+                    border: transparent;
+                    height: 20px;
+                    border: 20px;
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    background: transparent;
+                    font-weight: 900;
+                    color: rgba(0, 0, 0, 0.681);
+                }
+            }
+        }
+    }
+}
+section{
+    .container{
+        display: flex;
+        justify-content: end;
+        .button{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            border: 1px solid transparent;
+            background-color: rgba(0, 255, 238, 0.4);
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            box-shadow: 4px 4px 10px 0px rgba(0, 255, 238, 0.4);
+            &:hover{
+                background-color: rgba(3, 255, 251, 1);
+            }
+            i{
+                font-size: 26px;
+                font-weight: 600;
+                color: rgb(7, 95, 26);
+            }
+        }
+    }
+}

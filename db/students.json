@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "image": "https://t3.ftcdn.net/jpg/01/93/56/24/360_F_193562494_uZu3hswS738ZiuypuRl2oID4gM7mmAHX.jpg",
+      "firstname": "Melvin",
+      "lastname": "Forbis",
+      "email": "melvinforbis2@gmail.com",
+      "phoneNumber": "+998949091231"
+    },
+    {
+      "id": "2",
+      "image": "https://t3.ftcdn.net/jpg/01/93/56/24/360_F_193562494_uZu3hswS738ZiuypuRl2oID4gM7mmAHX.jpghttps://t3.ftcdn.net/jpg/01/78/60/12/360_F_178601298_AbZq48t6u9k8bV7RSG8YrKuj7QxAGlhH.jpg",
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "johnbds2@gmail.com",
+      "phoneNumber": "+998943024567"
+    }
+  ]
+}
