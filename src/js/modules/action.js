@@ -53,7 +53,7 @@ function setStudentValue(student) {
 
 export function showModal(id) {
     if(id) {
-        fetch("https://students-database-z0uc.onrender.com/" + id,)
+        fetch("https://students-database-z0uc.onrender.com" + id,)
         .then(res => res.json())
         .then(data => {
             setStudentValue(data)
