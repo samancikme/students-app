@@ -3,7 +3,7 @@ import { getData } from "./modules/request.js"
 
 
 const searchStudent = document.querySelector("#search-input"),
-url = "https://students-database-z0uc.onrender.com"
+url = "https://students-database-z0uc.onrender.com/users"
 
 getData(url)
 
