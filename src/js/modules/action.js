@@ -7,7 +7,7 @@ form = document.querySelector("#add-student"),
 showImg = document.querySelector(".show"),
 img = document.querySelector(".image-form")
 
-const url = "http://localhost:3000/users"
+const url = "https://students-database-z0uc.onrender.com"
 
 
 
@@ -53,7 +53,7 @@ function setStudentValue(student) {
 
 export function showModal(id) {
     if(id) {
-        fetch("http://localhost:3000/users/" + id,)
+        fetch("https://students-database-z0uc.onrender.com/" + id,)
         .then(res => res.json())
         .then(data => {
             setStudentValue(data)

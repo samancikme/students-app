@@ -2,7 +2,7 @@ import { closeModal } from "./action.js"
 import { renderStudents } from "./render.js"
 
 
-const url = "http://localhost:3000/users"
+const url = "https://students-database-z0uc.onrender.com"
 
 const addStudent = document.querySelector("#add-student")
 
